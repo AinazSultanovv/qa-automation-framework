@@ -22,6 +22,7 @@
 ## 📁 Структура проекта
 src/
 ├── main/java/org/qa/ # Утилиты, модели данных, Page Objects, API-клиенты
+
 └── test/java/org/qa/ # Unit, API и UI тесты, конфигурации, тестовые данные
 
 
