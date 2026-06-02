@@ -1,2 +1,37 @@
-# qa-automation-framework
-Java QA Automation Framework - learning project with utilities, models and tests
+# QA Automation Framework
+
+Фреймворк для автоматизированного тестирования на Java. Построен по принципам чистой архитектуры и пирамиды тестирования. Включает Unit, API и UI тесты, готов к интеграции в CI/CD.
+
+## 🛠 Технологический стек
+
+**Язык & Сборка:** Java 21, Maven  
+**Git & Инфраструктура:** Git, GitHub (branches, PR, code review), SSH, Jenkins, Docker, Kubernetes, удалённые серверы  
+**Unit-тесты:** JUnit 5, Mockito (mocks/spies/stubs), Dependency Injection, AssertJ, параметризация, параллельный запуск  
+**API-тесты:** REST, JSON, RestAssured, Postman, Swagger, аутентификация, сериализация/десериализация, многопоточность  
+**UI-тесты:** Selenium WebDriver, Page Object Model (POM), HTML/CSS/DOM, Chrome DevTools, локаторы, работа с куками  
+**Архитектура:** Монолит vs Микросервисы, клиент-серверное взаимодействие, HTTP/HTTPS, оценка покрытия, метрики качества
+
+## ✅ Реализованный функционал
+
+- **Unit:** Покрытие бизнес-логики и утилит, изоляция зависимостей через Mockito, параметризованные сценарии
+- **API:** Автоматизация REST-запросов (GET/POST/PATCH), валидация статус-кодов и JSON-структур, использование моков
+- **UI:** Кроссбраузерные тесты на Selenium, архитектура Page Object, параметризация данных, работа с видимостью элементов
+- **Отчётность:** Интеграция Allure для детальной визуализации прогонов и шагов
+- **CI/CD:** Настройка пайплайнов, контейнеризация через Docker, запуск в Selenium Grid, мониторинг покрытия
+
+## 📁 Структура проекта
+src/
+├── main/java/org/qa/ # Утилиты, модели данных, Page Objects, API-клиенты
+└── test/java/org/qa/ # Unit, API и UI тесты, конфигурации, тестовые данные
+
+
+## 🚀 Как запустить
+1. Склонируйте репозиторий
+2. Откройте проект в IntelliJ IDEA (автоматический импорт Maven)
+3. Запуск всех тестов: `mvn clean test`
+4. Просмотр отчёта Allure: `mvn allure:serve`
+
+## 👤 Автор
+
+**Твоё Имя**  
+QA Automation Engineer
