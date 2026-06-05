@@ -2,6 +2,8 @@
 // Управление задачами и сортировка по приоритету
 package org.qa.core;
 
+import org.qa.models.Task;
+
 import java.util.Arrays;
 
 public class TaskManager {

@@ -2,6 +2,8 @@
 // Уведомления CI/ системы
 package org.qa.core;
 
+import org.qa.models.PipelineStatus;
+
 public class CiNotifier {
 
     public static String formatNotification(PipelineStatus status, int actualRetries) {

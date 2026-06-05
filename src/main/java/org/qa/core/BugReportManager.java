@@ -3,6 +3,8 @@
 package org.qa.core;
 
 
+import org.qa.models.BugReport;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashSet;

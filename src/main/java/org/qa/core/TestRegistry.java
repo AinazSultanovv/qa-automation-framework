@@ -2,6 +2,8 @@
 // Реестр зарегистрированных тестов
 package org.qa.core;
 
+import org.qa.models.TestCase;
+
 import java.util.ArrayList;
 import java.util.List;
 
