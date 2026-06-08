@@ -1,5 +1,6 @@
 package org.qa.unit.core;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -29,15 +30,14 @@ public class PaymentServiceTest {
     @InjectMocks
     PaymentService paymentService;
 
+
     @Test
     void shouldProcessPaymentSuccessfully() {
         // Arrange
         PaymentResult paymentResult = new PaymentResult(true, "TXN123", "Payment successful");
         when(paymentGateway.processPayment("user123", 100.0)).thenReturn(paymentResult);
-
         // Act
         PaymentResult result = paymentService.processPayment("user123", 100.0);
-
         // Assert
         assertTrue(result.isSuccess());
         assertEquals("TXN123", result.getTransactionId());
